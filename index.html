@@ -1,1 +1,218 @@
-# Peliculas-Favoritas-Azucena
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Películas Favoritas</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #fdf6ff, #f0e6fa);
+      color: #4a3b5c;
+      padding: 30px 20px;
+      min-height: 100vh;
+    }
+    .cabecera {
+      text-align: center;
+      margin-bottom: 40px;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #7e49b4;
+      margin-bottom: 10px;
+    }
+    .subtitulo {
+      font-size: 1.2rem;
+      color: #9b72c1;
+      font-style: italic;
+    }
+    .contenedor {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .tarjeta {
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(126, 73, 180, 0.15);
+      transition: transform 0.3s ease;
+    }
+    .tarjeta:hover {
+      transform: translateY(-5px);
+    }
+    .tarjeta img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+    .tarjeta h3 {
+      color: #7e49b4;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+    .tarjeta p {
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+    .etiqueta {
+      display: inline-block;
+      background: #e9d5ff;
+      color: #7e49b4;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin-bottom: 10px;
+    }
+    .resumen {
+      max-width: 800px;
+      margin: 50px auto 30px;
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(126, 73, 180, 0.15);
+    }
+    .resumen h2 {
+      text-align: center;
+      color: #7e49b4;
+      margin-bottom: 20px;
+    }
+    .resumen ul {
+      list-style: none;
+      padding: 0;
+    }
+    .resumen li {
+      padding: 10px 0;
+      border-bottom: 1px solid #f0e6fa;
+      font-size: 1.1rem;
+    }
+    .creado-por {
+      text-align: center;
+      margin-top: 40px;
+      color: #9b72c1;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cabecera">
+    <h1>🎬 MIS PELÍCULAS FAVORITAS</h1>
+    <p class="subtitulo">Donde el amor, la magia y el misterio se encuentran 💜✨</p>
+  </div>
+
+  <div class="contenedor">
+
+    <!-- === 💜 ROMANCE === -->
+    <div class="tarjeta">
+      <span class="etiqueta">💜 Romance</span>
+      <h3>After — 2019</h3>
+      <img src="imagenes/after.jpg.jpg" alt="After">
+      <p>Intensa, real y transformadora. Un amor que lo cambia todo.</p>
+      <p>• Me atrapó desde el primer momento</p>
+      <p>• Una historia que deja huella 💞</p>
+    </div>
+
+    <div class="tarjeta">
+      <span class="etiqueta">💜 Romance</span>
+      <h3>Yo antes de ti — 2016</h3>
+      <img src="imagenes/yo-antes-de-ti.jpg" alt="Yo antes de ti">
+      <p>Una historia que te enseña a vivir, incluso cuando duele.</p>
+      <p>• "Solo porque no puedas caminar no significa que no puedas volar"</p>
+      <p>• Una lección de vida inolvidable 🌸</p>
+    </div>
+
+    <div class="tarjeta">
+      <span class="etiqueta">💜 Romance</span>
+      <h3>El Stand de los Besos</h3>
+      <img src="imagenes/stand-besos.jpg" alt="El Stand de los Besos">
+      <p>Tierna, divertida y llena de sentimientos bonitos.</p>
+      <p>• Los momentos más dulces e inolvidables 💋</p>
+      <p>• Una historia que te saca sonrisas 💖</p>
+    </div>
+
+    <!-- === ✨ MAGIA === -->
+    <div class="tarjeta">
+      <span class="etiqueta">✨ Magia</span>
+      <h3>La Bella y la Bestia</h3>
+      <img src="imagenes/bella-bestia.jpg" alt="La Bella y la Bestia">
+      <p>La belleza está en el corazón, no en la apariencia.</p>
+      <p>• "No hay nada más poderoso que la belleza interior"</p>
+      <p>• Un cuento que nunca pasa de moda 🌹</p>
+    </div>
+
+    <div class="tarjeta">
+      <span class="etiqueta">✨ Magia</span>
+      <h3>La Princesa y el Sapo</h3>
+      <img src="imagenes/princesa-sapo.jpg" alt="La Princesa y el Sapo">
+      <p>Trabajo, sueños y el verdadero amor que lo transforma todo.</p>
+      <p>• "Los sueños se consiguen con esfuerzo y paciencia"</p>
+      <p>• Magia en Nueva Orleans y un beso que cambia todo 💚</p>
+    </div>
+
+    <div class="tarjeta">
+      <span class="etiqueta">✨ Magia</span>
+      <h3>Enredados</h3>
+      <img src="imagenes/Enredados.jpg" alt="Enredados">
+      <p>El cabello mágico, una aventura y la libertad que siempre soñaste.</p>
+      <p>• "Brilla con luz propia ✨"</p>
+      <p>• Una historia que te hace creer en ti misma 💇‍♀️💜</p>
+    </div>
+
+    <!-- === 👻 MISTERIO / TERROR === -->
+    <div class="tarjeta">
+      <span class="etiqueta">👻 Misterio</span>
+      <h3>El Conjuro — 2013</h3>
+      <img src="imagenes/El-conjuro.jpg" alt="El Conjuro">
+      <p>Basada en hechos reales, te mantiene sin respirar.</p>
+      <p>• El mal no siempre se ve, se siente 👻</p>
+      <p>• Terror que te acompaña después de verla</p>
+    </div>
+
+    <div class="tarjeta">
+      <span class="etiqueta">👻 Misterio</span>
+      <h3>La Noche del Demonio</h3>
+      <img src="imagenes/noche-demonio.jpg" alt="La Noche del Demonio">
+      <p>Lo que duerme despierta y el miedo entra en casa.</p>
+      <p>• Cierra bien la puerta y la ventana 🌑</p>
+      <p>• Una noche que no termina nunca</p>
+    </div>
+
+    <div class="tarjeta">
+      <span class="etiqueta">👻 Misterio</span>
+      <h3>La Casa de Cera — 2005</h3>
+      <img src="imagenes/casa-cera.jpg" alt="La Casa de Cera">
+      <p>Escalofriante, original y con un final impresionante.</p>
+      <p>• No pude dejar de pensar en ella</p>
+      <p>• La belleza puede ocultar misterios 🕯️</p>
+    </div>
+
+  </div>
+
+  <div class="resumen">
+    <h2>📊 EN RESUMEN</h2>
+    <ul>
+      <li>🎬 Total de películas: <strong>9</strong></li>
+      <li>💜 Romance: After — Yo antes de ti — El Stand de los Besos</li>
+      <li>✨ Magia: La Bella y la Bestia — La Princesa y el Sapo — Enredados</li>
+      <li>👻 Misterio: El Conjuro — La Noche del Demonio — La Casa de Cera</li>
+      <li>👑 Mi favorita de amor: After (2019)</li>
+      <li>🌟 Mi favorita de magia: Enredados</li>
+      <li>🔮 Mi favorita de misterio: La Casa de Cera (2005)</li>
+      <li>📅 Creado: 03 de octubre de 2026</li>
+    </ul>
+  </div>
+
+  <div class="creado-por">
+    <p><strong>Creado por Azucena Juárez</strong> 🌸</p>
+    <p>"El cine nos regala mil emociones: unas nos llenan de amor, otras de magia y otras nos ponen valientes. Y todas son especiales" 💜</p>
+  </div>
+
+</body>
+</html>
